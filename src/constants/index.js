@@ -1,4 +1,4 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star, image  } from "../assets";
 
 export const navLinks = [
   {
@@ -6,16 +6,37 @@ export const navLinks = [
     title: "Home",
   },
   {
-    id: "features",
-    title: "Features",
+    id: "goals",
+    title: "Goals",
   },
   {
     id: "product",
     title: "Product",
   },
   {
-    id: "clients",
-    title: "Clients",
+    id: "articles",
+    title: "Articles",
+  },
+];
+
+export const articles = [
+  {
+    id: 1,
+    title: "Exploring AI in Healthcare",
+    img: image,
+    link: "/articles/ai-healthcare",
+  },
+  {
+    id: 2,
+    title: "The Future of Web Development",
+    img: image,
+    link: "/articles/web-development",
+  },
+  {
+    id: 3,
+    title: "Cybersecurity Trends 2025",
+    img: image,
+    link: "/articles/cybersecurity",
   },
 ];
 
@@ -29,14 +50,21 @@ export const features = [
   },
   {
     id: "feature-2",
-    icon: shield,
+    icon: star,
     title: "100% Secured",
     content:
       "We take proactive steps make sure your information and transactions are secure.",
   },
   {
     id: "feature-3",
-    icon: send,
+    icon: star,
+    title: "Balance Transfer",
+    content:
+      "A balance transfer credit card can save you a lot of money in interest charges.",
+  },
+  {
+    id: "feature-4",
+    icon: star,
     title: "Balance Transfer",
     content:
       "A balance transfer credit card can save you a lot of money in interest charges.",
