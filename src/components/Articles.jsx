@@ -4,12 +4,13 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { articles } from "../constants";
+import styles from "../style";
 
 const Articles = () => {
   return (
-    <section id="articles" className="py-12 text-white">
+    <section id="articles" className={`${styles.paddingY} ${styles.flexCenter} flex-col relative justify-center items-center`}>
+    <h2 className="text-center text-white text-6xl font-bold my-8">Articles</h2>
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-6xl font-bold mb-12">Articles</h2>
 
         <div className="relative">
           <Swiper
